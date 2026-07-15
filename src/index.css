@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Pinyon+Script&family=Alex+Brush&family=Monsieur+La+Doulaise&family=Great+Vibes&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  --font-display: "Cinzel", serif;
+  --font-signature-pinyon: "Pinyon Script", cursive;
+  --font-signature-alex: "Alex Brush", cursive;
+  --font-signature-monsieur: "Monsieur La Doulaise", cursive;
+  --font-signature-great: "Great Vibes", cursive;
+}
+
+/* Custom CSS Scrollbar and visual animations */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0f0f11;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animate-draw {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw 3s ease-in-out forwards;
+}
+
+/* Metallic gold effect text classes */
+.text-gold {
+  background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 30%, #fef08a 70%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Card hover glow */
+.card-glow {
+  box-shadow: 0 0 20px rgba(251, 191, 36, 0.05);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card-glow:hover {
+  box-shadow: 0 0 30px rgba(251, 191, 36, 0.12);
+  border-color: rgba(251, 191, 36, 0.3);
+}

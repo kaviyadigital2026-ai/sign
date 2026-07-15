@@ -1,0 +1,6 @@
+{
+  "name": "Signature Design Studio",
+  "description": "A premium, interactive landing page for purchasing professionally handcrafted custom signatures. Features an interactive drawing board, a live calligraphic signature visualizer, custom packages, and a tailored checkout experience.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
